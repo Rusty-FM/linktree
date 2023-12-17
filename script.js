@@ -6,38 +6,9 @@ bgIcon[3].style.background = '#000';
 bgIcon[4].style.background = '#0866FF';
 
 
-
 const toggle = document.querySelector('.logo');
-            let tema = localStorage.getItem('tema');
-
-
-            if (!tema) {
-                localStorage.setItem('tema', 'bg1');
-            }
-
-            const bg1 = () => {
-                document.body.classList.add('body');
-                localStorage.setItem('tema', 'bg2');
-            }
-            
-            const bg1Mode = () => {
-                document.body.classList.toggle('bgLogo');
-                localStorage.setItem('tema', 'bg1');
-            }
-
-            if(tema === 'bg2') {
-                bg1();
-            }
-
-
-            toggle.addEventListener('click', function (e) {
-                tema = localStorage.getItem('tema');
-                if (tema === 'bg1') {
-                    bg1();
-                } else {
-                    bg1Mode();
-                }
-                e.preventDefault();
-            })
+toggle.addEventListener('click', function() {
+    alert('Semoga Hari-Harimu Bahagia Terus ❤️')
+});
 
 
